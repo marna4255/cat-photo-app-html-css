@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centers text horizontally */
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Makes body fill the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+  }
+  h1 {
+    color: #007acc; /* Blue color for heading */
+  }
+  p {
+    color: #555; /* Medium gray for paragraph text */
+  }

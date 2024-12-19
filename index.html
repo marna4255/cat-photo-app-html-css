@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styleIndex.css" />
+    <title>Cat Photo App</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+
+      <!-- Section displaying cat photos -->
+      <section>
+        <h2>Cat Photos</h2>
+
+        <!-- Paragraph introducing the cat photo link -->
+        <p>
+          Everyone loves
+          <a href="img/cat1.jpg">cute cats</a>
+          online!
+        </p>
+
+        <!-- Link to external gallery with more cat photos -->
+        <p>
+          See more
+          <a target="_blank" href="https://www.pexels.com/search/cat/"
+            >cat photos</a
+          >
+          in our gallery.
+        </p>
+
+        <!-- Image of a cat that links to another page -->
+        <a href="https://www.pexels.com/search/cat/">
+          <img src="img/cat2.jpg" alt="A cute cat" width="300" height="200" />
+        </a>
+      </section>
+
+      <!-- Section displaying a list of things cats love and hate -->
+      <section>
+        <h2>Cat Lists</h2>
+
+        <!-- List of things cats love -->
+        <h3>Things cats love:</h3>
+
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+
+        <!-- Figure to display a lasagna image with a caption -->
+        <figure>
+          <img
+            src="img/lasagna.jpg"
+            alt="A delicious slice of lasagna on a plate"
+            width="300"
+            height="200"
+          />
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+
+        <!-- List of things cats hate -->
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+
+        <!-- Figure to display an image of cats with a caption -->
+        <figure>
+          <img
+            src="img/cats.jpg"
+            alt="Five cats looking around a field."
+            width="300"
+            height="200"
+          />
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Section with a form to submit cat information -->
+      <section>
+        <h2>Cat Form</h2>
+        <!-- Form to submit cat-related data -->
+        <form action="sendingPage.html">
+          <!-- Fieldset for indoor vs outdoor cat radio buttons -->
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label
+              ><input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+                checked
+              />
+              Indoor</label
+            >
+            <label
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+
+          <!-- Fieldset for cat personality checkboxes -->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+
+            <!-- Checkboxes to select the cat's personality traits -->
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
+
+          <!-- Input field to provide cat photo URL -->
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+
+          <!-- Submit button for the form -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer section of the page -->
+    <footer>
+      <p>&copy; 2024 Marina.C</p>
+    </footer>
+  </body>
+</html>
